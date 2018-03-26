@@ -14,6 +14,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AfService } from './providers/af.service';
+import { AngularFirestore, AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AfService } from './providers/af.service';
     AngularFireModule.initializeApp(environment.firebase), // import AngularFire2 Module with configuration in environment.ts
     AngularFireDatabaseModule,
     AppRoutingModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [AfService],
   bootstrap: [AppComponent]

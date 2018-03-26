@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { AfService } from '../providers/af.service';
 
+import { User } from '../providers/user';
+
+
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
@@ -11,10 +14,10 @@ export class LoginPageComponent implements OnInit {
 
   constructor(public afService: AfService) { }
   
-  user;
+  user: User;
 
   ngOnInit() {
-    this.afService.user
+    this.afService.user$
       .subscribe(
         (user) => {this.user = user;}  
       );
