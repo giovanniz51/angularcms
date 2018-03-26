@@ -21,6 +21,10 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MaterialModule } from './material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +40,10 @@ import { SubscriberGuard } from './guards/subscriber.guard';
     AngularFireDatabaseModule,
     AppRoutingModule,
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [AfService, AdminGuard, SubscriberGuard],
   bootstrap: [AppComponent]
