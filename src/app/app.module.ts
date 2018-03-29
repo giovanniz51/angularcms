@@ -15,9 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AfService } from './providers/af.service';
 import { AngularFirestore, AngularFirestoreModule } from 'angularfire2/firestore';
-import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
 
@@ -30,9 +29,8 @@ import { MaterialModule } from './material.module';
     AppComponent,
     PagesListComponent,
     LoginPageComponent,
-    AppNavbarComponent,
     HomePageComponent,
-    AdminPageComponent
+    AppNavbarComponent
   ],
   imports: [
     BrowserModule,
