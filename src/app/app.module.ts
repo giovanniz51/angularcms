@@ -24,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material.module';
 
+import { MenusService } from './service/menus/menus.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,7 @@ import { MaterialModule } from './material.module';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [AfService, AdminGuard, SubscriberGuard],
+  providers: [AfService, AdminGuard, SubscriberGuard, MenusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
